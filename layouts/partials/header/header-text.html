@@ -6,7 +6,7 @@
         {{ if .title }}            
           {{ range .title }}
           <div class="site-header__title {{ if $header.titleShadow }}site-header__title--shadow{{ end }}" style="font-size: {{ $header.titleFontSize }}px; {{ with $header.titleColor }}color:{{ . }}{{ end }};">
-            {{ . }}
+            {{ . }} {{ emojify $.Site.Params.hello }}
           </div>
           {{ end }}
         {{ end }}
