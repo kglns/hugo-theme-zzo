@@ -73,6 +73,9 @@ other = "Message"
 [contact-send]
 other = "Send"
 
+[contact-subscribe]
+other = "Subscribe"
+
 [contact-browse]
 other = "Browse"
 
