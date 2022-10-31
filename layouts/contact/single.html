@@ -11,6 +11,8 @@
       </article>
       {{ if eq .Params.service "formspree" }}
         {{ partial "contact/formspree" . }}
+      {{ else if eq .Params.service "formspree_subscribe" }}
+        {{ partial "contact/formspree_subscribe" . }}
       {{ else if eq .Params.service "getform" }}
         {{ partial "contact/getform" . }}
       {{ else if eq .Params.service "netlifyform" }}
