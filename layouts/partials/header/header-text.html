@@ -13,12 +13,10 @@
         {{ if .spaceBetweenTitleSubtitle }}
           <div style="height: {{ .spaceBetweenTitleSubtitle }}px"></div>
         {{ end }}
-        {{ if .subtitle }}
-          {{ range .subtitle }} 
+        {{ if .email }}
           <div class="site-header__subtitle" style="font-size: {{ $header.subtitleFontSize }}px; {{ with $header.subtitleColor }}color:{{ . }}{{ end }}" data-cursive="{{ with $header.subtitleCursive }}{{ . }}{{ end }}">
-            {{ . }}
+            Welcome to my blog. Feel free to browse and enjoy my articles. You can reach me at <a>{{ .email }}</a> for inquiries or comments. Thank you!
           </div>
-          {{ end }}      
         {{ end }}
       </div>
     {{ end }}
