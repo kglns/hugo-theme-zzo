@@ -15,7 +15,10 @@
         {{ end }}
         {{ if .email }}
           <div class="site-header__subtitle" style="font-size: {{ $header.subtitleFontSize }}px; {{ with $header.subtitleColor }}color:{{ . }}{{ end }}" data-cursive="{{ with $header.subtitleCursive }}{{ . }}{{ end }}">
-            Welcome to my blog. Feel free to browse and enjoy my articles. You can reach me at <a>{{ .email }}</a> for inquiries or comments. Thank you!
+            Welcome to my blog. Please click <a href="https://kaung.dev/subscribe">here</a> to subscribe!
+          </div>
+          <div class="site-header__subtitle" style="font-size: {{ $header.subtitleFontSize }}px; {{ with $header.subtitleColor }}color:{{ . }}{{ end }}" data-cursive="{{ with $header.subtitleCursive }}{{ . }}{{ end }}">
+            For inquiries, you can reach me at <a>{{ .email }}</a>. Thank you!
           </div>
         {{ end }}
       </div>
